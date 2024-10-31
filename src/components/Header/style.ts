@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
+  max-width: 70rem;
+  margin: 0 auto;
   height: 6.5rem;
 
   display: flex;
