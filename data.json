@@ -6,7 +6,7 @@
       "description": "The traditional coffee made with hot water and ground beans",
       "tags": ["traditional"],
       "price": 9.90,
-      "image": "/coffees/expresso.png"
+      "image": "src/assets/coffees/expresso.png"
     },
     {
       "id": "1",
@@ -14,7 +14,7 @@
       "description": "Diluted espresso, less intense than the traditional one",
       "tags": ["traditional"],
       "price": 9.90,
-      "image": "/coffees/americano.png"
+      "image": "src/assets/coffees/americano.png"
     },
     {
       "id": "2",
@@ -22,7 +22,7 @@
       "description": "Traditional espresso coffee with creamy foam",
       "tags": ["traditional"],
       "price": 9.90,
-      "image": "/coffees/expresso-cremoso.png"
+      "image": "src/assets/coffees/expresso-cremoso.png"
     },
     {
       "id": "3",
@@ -30,7 +30,7 @@
       "description": "Drink made with espresso coffee and ice cubes",
       "tags": ["traditional", "iced"],
       "price": 9.90,
-      "image": "/coffees/cafe-gelado.png"
+      "image": "src/assets/coffees/cafe-gelado.png"
     },
     {
       "id": "4",
@@ -38,7 +38,7 @@
       "description": "Half and half of traditional espresso with steamed milk",
       "tags": ["traditional", "with milk"],
       "price": 9.90,
-      "image": "/coffees/cafe-com-leite.png"
+      "image": "src/assets/coffees/cafe-com-leite.png"
     },
     {
       "id": "5",
@@ -46,7 +46,7 @@
       "description": "A shot of espresso with twice as much milk and creamy foam",
       "tags": ["traditional", "with milk"],
       "price": 9.90,
-      "image": "/coffees/latte.png"
+      "image": "src/assets/coffees/latte.png"
     },
     {
       "id": "6",
@@ -54,7 +54,7 @@
       "description": "Drink with cinnamon made of equal parts coffee, milk, and foam",
       "tags": ["traditional", "with milk"],
       "price": 9.90,
-      "image": "/coffees/capuccino.png"
+      "image": "src/assets/coffees/capuccino.png"
     },
     {
       "id": "7",
@@ -62,7 +62,7 @@
       "description": "Espresso coffee mixed with a little hot milk and foam",
       "tags": ["traditional", "with milk"],
       "price": 9.90,
-      "image": "/coffees/macchiato.png"
+      "image": "src/assets/coffees/macchiato.png"
     },
     {
       "id": "8",
@@ -70,7 +70,7 @@
       "description": "Espresso coffee mixed with a little hot milk and foam",
       "tags": ["traditional", "with milk"],
       "price": 9.90,
-      "image": "/coffees/mocaccino.png"
+      "image": "src/assets/coffees/mocaccino.png"
     },
     {
       "id": "9",
@@ -78,7 +78,7 @@
       "description": "Drink made with chocolate dissolved in hot milk and coffee",
       "tags": ["special", "with milk"],
       "price": 9.90,
-      "image": "/coffees/chocolate-quente.png"
+      "image": "src/assets/coffees/chocolate-quente.png"
     },
     {
       "id": "10",
@@ -86,7 +86,7 @@
       "description": "Iced espresso drink with rum, heavy cream, and mint",
       "tags": ["special", "alcoholic", "iced"],
       "price": 9.90,
-      "image": "/coffees/cubano.png"
+      "image": "src/assets/coffees/cubano.png"
     },
     {
       "id": "11",
@@ -94,7 +94,7 @@
       "description": "Sweet drink made with coffee and coconut milk",
       "tags": ["special"],
       "price": 9.90,
-      "image": "/coffees/havaiano.png"
+      "image": "src/assets/coffees/havaiano.png"
     },
     {
       "id": "12",
@@ -102,7 +102,7 @@
       "description": "Drink made with Arabica coffee beans and spices",
       "tags": ["special"],
       "price": 9.90,
-      "image": "/coffees/arabe.png"
+      "image": "src/assets/coffees/arabe.png"
     },
     {
       "id": "13",
@@ -110,7 +110,7 @@
       "description": "Drink based on coffee, Irish whiskey, sugar, and whipped cream",
       "tags": ["special", "alcoholic"],
       "price": 9.90,
-      "image": "/coffees/irlandes.png"
+      "image": "src/assets/coffees/irlandes.png"
     }
   ]
 }
