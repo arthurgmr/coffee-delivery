@@ -24,6 +24,8 @@ export function OrderConfirmation() {
     return null
   }
 
+  console.log(orderInfo)
+
   return (
     <Container>
       <Order>

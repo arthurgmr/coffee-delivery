@@ -1,50 +1,74 @@
-# React + TypeScript + Vite
+# CoffeeShop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CoffeeShop is a simple React application designed to simulate a coffee shop checkout process. The goal of this project is to help learners understand fundamental React principles by building an interactive shopping cart and checkout system.
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Learning Objectives](#learning-objectives)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Dependencies](#dependencies)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Overview
+The CoffeeShop app allows users to add different types of coffee to their cart, adjust quantities, and proceed to checkout. At the end of the checkout process, a confirmation page is displayed with a summary of the order.
 
-## Expanding the ESLint configuration
+## Features
+- Add and remove coffee items from the cart
+- Adjust the quantity of each coffee item
+- Calculate total price including delivery
+- Form validation for checkout details
+- Confirmation page with order summary
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Learning Objectives
+This project helps in learning:
+- How to create and manage state with React Context API.
+- Handling form validation with React Hook Form and Zod.
+- Navigating between pages using React Router.
+- Building reusable components like buttons and forms.
+- Organizing and structuring React projects.
 
-- Configure the top-level `parserOptions` property like this:
+## Project Structure
+The main structure of the app is organized into several TypeScript files:
+- `index.tsx`: Entry point of the app where the main logic is implemented.
+- `CartContext.tsx`: Contains the context for managing the shopping cart state.
+- `Checkout.tsx`: Contains the Checkout component, which handles the checkout process.
+- `Confirmation.tsx`: Handles the confirmation page, displaying the order summary.
+- `components/`: Contains reusable components like buttons and form inputs.
+- `pages/`: Contains the main pages of the app (Checkout, Confirmation, Home).
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Dependencies
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+The app uses the following packages:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- `react`: Core React library.
+- `react-router-dom`: For routing and navigation.
+- `react-hook-form`: For form handling and validation.
+- `zod`: For schema validation.
+- `styled-component`s: For styling components.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Installation
+To run this project on your local machine, follow these steps:
+
+1. **Clone the repository**:
+  ```sh
+   git clone <url-do-repositorio>
+   cd CoffeeShop
+  ```
+2. **Install dependencies**:
+  ```bash
+    npm install
+  ```
+
+## Usage
+
+The app consists of a shopping cart where users can add different types of coffee, adjust quantities, and proceed to checkout. The checkout form validates user input and, upon successful submission, navigates to a confirmation page displaying the order summary.
+
+<img src="src/assets/ezgif-1-3cdf87d2d1.gif" />
+
+<img src="src/assets/ezgif-1-4d159a8c93.gif" />
+
+## License
+
+This project is open-source and available under the MIT License.
