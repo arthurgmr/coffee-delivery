@@ -91,14 +91,9 @@ export function cartReducer(state: CartState, action: any): CartState {
       };
     }
     case ActionsType.CHECKOUT: {
-      const newOrder = {
-        id: new Date().getTime(),
-        items: state.coffees,
-        ...action.payload.order
-      }
-      return {
-        ...state,
-        order: [...state.order, newOrder],
+      return { 
+        ...state, 
+        order: [...state.order, action.payload.order],
         coffees: []
       }
     }

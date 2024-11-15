@@ -8,6 +8,8 @@ import { SubmitHandler, useForm } from "react-hook-form"
 import { Radio } from "../../components/Form/Radio"
 import { QuantityInput } from '../../components/Form/QuantityInput'
 import { CartContext } from '../../contexts/CartContext'
+import { useNavigate } from 'react-router-dom'
+import { Order } from '../../reducers/cart/reducer'
 
 type FormInputs = {
   cep: number
@@ -70,11 +72,19 @@ export function Checkout() {
     removeCoffee(coffeeId)
   }
 
+  const navigate = useNavigate()
   const handleCheckout: SubmitHandler<FormInputs> = (data) => { 
     if (coffees.length === 0) {
       return alert('Add at least one coffee to your order')
     }
-    checkout(data)
+    const newOrder: Order = {
+      id: new Date().getTime(),
+      ...data,
+      items: coffees
+    }
+
+    checkout(newOrder)
+    navigate(`/confirmation/${newOrder.id}`)
   }
   
   return (

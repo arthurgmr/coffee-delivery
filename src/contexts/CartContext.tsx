@@ -1,7 +1,6 @@
 import { createContext, ReactNode, useReducer } from "react";
 import { cartReducer, CoffeeOrder, Order } from "../reducers/cart/reducer";
 import { addCoffeeInCartAction, addCoffeeQuantityInCartAction, checkoutAction, removeCoffeeInCartAction, subtractCoffeeQuantityInCartAction } from "../reducers/cart/actions";
-import { orderFormData } from "../pages/Checkout";
 
 
 interface CartContext {
@@ -12,7 +11,7 @@ interface CartContext {
   removeCoffee: (coffeeId: number) => void
   deliveryPrice: number
   totalItemsPrice: number
-  checkout: (order: orderFormData) => void
+  checkout: (order: Order) => void
   order: Order[]
 }
 
@@ -57,8 +56,8 @@ export function CartContextProvider({
     dispatch(removeCoffeeInCartAction(coffeeId))
   }
 
-  function checkout(order: orderFormData) {
-    dispatch(checkoutAction(order))
+  function checkout(data: Order) {
+    dispatch(checkoutAction(data))
   }
 
   function getTotalItemsPrice() {

@@ -2,6 +2,7 @@ import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
 import { CoffeeList, Heading, Hero, HeroContent, Info } from "./styles";
 import { useTheme } from "styled-components";
 import { Card } from "../../components/Card";
+
 import heroLogo from "../../assets/hero-logo.svg";
 import heroBg from "../../assets/hero-background.svg";
 
